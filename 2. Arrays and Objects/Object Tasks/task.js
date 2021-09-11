@@ -44,7 +44,7 @@ const users = {
     },
     Thomas: {
         email: 'thomas@thomas.com',
-        skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+        skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Node', 'Mongo', 'D3', 'Angular', 'Vue'],
         age: 20,
         isLoggedIn: false,
         points: 40
@@ -57,4 +57,18 @@ const users = {
         points: 40
     }
 }
+
+// 1. Answer code
+
+let currentSkillLength = 0;
+let skilledPerson;
+
+Object.keys(users).forEach((user) => {
+    if(users[user].skills.length > currentSkillLength ) {
+        currentSkillLength = users[user].skills.length;
+        skilledPerson = user;
+    }
+});
+
+console.log(` ${skilledPerson} is having the highest skill set of ${currentSkillLength} `)
 
