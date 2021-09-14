@@ -72,3 +72,26 @@ Object.keys(users).forEach((user) => {
 
 console.log(` ${skilledPerson} is having the highest skill set of ${currentSkillLength} `)
 
+// 2. Answer
+
+let loggedInUsers = [];
+
+Object.keys(users).forEach((user) => {
+    if(users[user].isLoggedIn) {
+        loggedInUsers.push(user);
+    }
+})
+
+console.log('Logged In Users: ', loggedInUsers)
+
+// 3. Answer
+
+let highPointUsers = [];
+
+Object.keys(users).forEach((user) => {
+    if(users[user].points >= 50) {
+        highPointUsers.push(user);
+    }
+})
+
+console.log('High Point Users: ', highPointUsers)
