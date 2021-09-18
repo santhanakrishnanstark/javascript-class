@@ -1,0 +1,86 @@
+/* remove default body margin */
+body {
+    margin: 0;
+    font: 400 16px/1.5 Segoe UI,system-ui,-apple-system,sans-serif;
+}
+
+header {
+    padding: 0px 24px;
+    height: 64px;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+
+    display: flex;
+    align-items: center;
+}
+
+/* header menu css */
+
+.header-menu {
+    flex: 1;
+}
+
+.header-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    padding-left: 48px;
+}
+
+header a {
+    color: #202124;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+header a {
+    padding: 0 24px;
+}
+
+header a:hover {
+    background-color: rgba(32,33,36,.04);
+}
+
+
+.right-menu {
+    position: relative;
+}
+
+.header-menu,
+.header-menu *,
+.right-menu,
+.right-menu a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.right-menu #search-input {
+    background: #f1f3f4;
+    border: none;
+    padding: 8px 8px 8px 40px;
+    width: 100%;
+    font: inherit;
+    font-size: 1rem;
+    line-height: 20px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.right-menu #search-input:focus {
+    outline: none;
+}
+
+.right-menu a {
+    min-width: 52px;
+    margin-left: 16px;
+}
+
+.right-menu svg {
+    position: absolute;
+    top: 21px;
+    left: 5px;
+    fill: #80868b;
+}
