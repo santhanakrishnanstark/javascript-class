@@ -84,3 +84,30 @@ console.log('****** getAttribute ******')
 titleArray.forEach(element => {
     console.log(element.getAttribute('data-value'))
 })
+
+
+// Adding TextContent 
+
+document.querySelector('#first-title').innerText = 'Basic DOM Operations';
+document.querySelector('#first-title').textContent = 'DOM Operations';
+
+// Adding InnerHTML
+
+document.querySelector('#first-title').innerText = 'Basic <h1>DOM</h1> Operations';
+
+document.querySelector('#first-title').innerHTML = '<span class="test">Basic</span> <strong>DOM</strong> Operations';
+
+
+
+// DOM Basics Task Script
+
+document.querySelectorAll('.table > div').forEach(function (divEl) {
+    // get the text content 
+    var text = divEl.innerText;
+
+    // check weather it is even or not, if it is even add even class for that even content div.
+    if((+ text)%2 === 0) {
+        divEl.classList.add('even');
+    }
+
+});
