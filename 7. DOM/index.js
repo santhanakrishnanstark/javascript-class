@@ -111,3 +111,5 @@ document.querySelectorAll('.table > div').forEach(function (divEl) {
     }
 
 });
+
+
