@@ -20,6 +20,11 @@
             background-color: #eee;
             border: 1px solid #aaa;
         }
+
+        .focus-in {
+            border: 2px dashed orange;
+            outline: none;
+        }
     </style>
 </head>
 <body>
@@ -30,6 +35,14 @@
     <h2>Form</h2>
     <input type="text" name="name" id="name" placeholder="enter your name">
     <br>
+
+    <label for="degree">Select your Degree</label>
+    <select name="degree" id="degree">
+        <option value="bca">BCA</option>
+        <option value="bsc">BSC</option>
+        <option value="mca">MCA</option>
+    </select>
+
     <p>Preview Name: <span id="previewText"></span></p>
     <button class="submit-btn">Submit</button>
     

@@ -14,10 +14,10 @@
  * 7. mouseout      -> when the mouse pointer is out from the element 
  * 8. input         -> when the value is entered to input field
  * 9. change        -> when the value is changed on input field
- * 10. blur         -> when the element is not focused
+ * 10. focus/blur   -> when the element is focused / not focused
  * 11. keydown      -> when the key is down
  * 12. keyup        -> when the key is up
- * 13. keypress     -> when we press any key
+ * 13. keypress     -> when we press any key (deprecated)
  * 14. onload       -> when the browser has finished loading a page.
  * 
  * 
@@ -100,3 +100,44 @@ document.querySelector('#name').addEventListener('input', function (event) {
 
     document.querySelector('#previewText').textContent = currentValue;
 });
+
+// Change event
+
+document.querySelector('#degree').addEventListener('change', function (event) {
+    console.log('Selected Degree: ', event.target.value)
+});
+
+// focus & blur event
+
+let inputEl = document.querySelector('#name');
+
+inputEl.addEventListener('focus', highlightInput);
+inputEl.addEventListener('blur', removeHighlight);
+
+
+function highlightInput(event) {
+    event.target.classList.add('focus-in');
+}
+
+function removeHighlight(event) {
+    event.target.classList.remove('focus-in');
+}
+
+// key events
+
+inputEl.addEventListener('keydown', function (event) {
+    // console.log(event.target.value)
+})
+
+inputEl.addEventListener('keyup', function (event) {
+    // console.log(event.target.value)
+})
+
+inputEl.addEventListener('keypress', function (event) {
+    console.log(event.target.value)
+})
+
+
+window.addEventListener('load', function (event) {
+    console.log(event)
+})
