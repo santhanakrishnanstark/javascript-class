@@ -41,3 +41,19 @@ main .register-form {
     border-radius: 10px;
     box-shadow: 0px 0px 10px 2px #eee;
 }
+
+/* Student Form Design */
+
+.other-hobby-field {
+    display: none;
+}
+
+/* Toggle Css Classes */
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
