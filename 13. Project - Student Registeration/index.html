@@ -18,7 +18,7 @@
         <div class="col-md-4 p-5">
           <div class="register-form">
             <h2 class="mb-3">Register Form</h2>
-            <form>
+            <form id="form">
               <div class="row mb-3">
                 <div class="col-6">
                   <label for="fname" class="form-label">First Name</label>
@@ -42,12 +42,7 @@
               <div class="row mb-3">
                 <div class="col-12">
                   <label for="date" class="form-label">Date Of Birth</label>
-                  <input
-                    type="date"
-                    name="date"
-                    id="date"
-                    class="form-control"
-                  />
+                  <input type="date" name="dob" id="dob" class="form-control" />
                 </div>
               </div>
               <div class="row mb-3">
@@ -84,7 +79,8 @@
                           type="radio"
                           name="gender"
                           id="gender1"
-                          class="form-check-input"
+                          class="form-check-input gender-input"
+                          value="male"
                         />
                         <label for="gender1" class="form-check-label"
                           >Male</label
@@ -95,7 +91,8 @@
                           type="radio"
                           name="gender"
                           id="gender2"
-                          class="form-check-input"
+                          class="form-check-input gender-input"
+                          value="female"
                         />
                         <label for="gender2" class="form-check-label"
                           >Female</label
@@ -117,7 +114,8 @@
                           type="checkbox"
                           name="hobbies"
                           id="hobbies1"
-                          class="form-check-input"
+                          class="form-check-input hobby-check"
+                          value="drawing"
                         />
                         <label for="hobbies1" class="form-check-label"
                           >Drawing</label
@@ -128,7 +126,8 @@
                           type="checkbox"
                           name="hobbies"
                           id="hobbies2"
-                          class="form-check-input"
+                          class="form-check-input hobby-check"
+                          value="singing"
                         />
                         <label for="hobbies2" class="form-check-label"
                           >Singing</label
@@ -139,7 +138,8 @@
                           type="checkbox"
                           name="hobbies"
                           id="hobbies3"
-                          class="form-check-input"
+                          class="form-check-input hobby-check"
+                          value="dance"
                         />
                         <label for="hobbies3" class="form-check-label"
                           >Dance</label
@@ -150,7 +150,8 @@
                           type="checkbox"
                           name="hobbies"
                           id="hobbies4"
-                          class="form-check-input"
+                          class="form-check-input hobby-check"
+                          value="listen music"
                         />
                         <label for="hobbies4" class="form-check-label"
                           >Listen Music</label
@@ -161,7 +162,8 @@
                           type="checkbox"
                           name="hobbies"
                           id="hobbies5"
-                          class="form-check-input other-hobby-check"
+                          class="form-check-input other-hobby-check hobby-check"
+                          value="others"
                         />
                         <label for="hobbies5" class="form-check-label"
                           >Others</label
@@ -213,7 +215,7 @@
               </div>
               <div class="row my-5">
                 <div class="col-md-6">
-                  <button type="button" class="btn btn-primary me-5">
+                  <button type="submit" class="btn btn-primary me-5">
                     Register
                   </button>
                   <button type="button" class="btn btn-outline-secondary">
@@ -226,23 +228,18 @@
         </div>
         <div class="col-md-8 p-5">
           <h2 class="mb-3">Student Lists</h2>
-          <table class="table table-bordered table-hover">
+          <table class="table table-bordered table-hover student-table">
             <thead class="table-dark">
               <tr>
                 <th>S.No</th>
-                <th>Student Name</th>
+                <th>First Name</th>
+                <th>Date Of Birth</th>
+                <th>Gender</th>
+                <th>City</th>
+                <th colspan="2">Actions</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-              <tr>
-                <td>-</td>
-                <td>-</td>
-              </tr>
-            </tbody>
+            <tbody></tbody>
           </table>
         </div>
       </div>
