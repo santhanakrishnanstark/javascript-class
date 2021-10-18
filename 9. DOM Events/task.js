@@ -34,6 +34,9 @@ inputEl.addEventListener('input', function (event) {
         // give some style for this particular div.
 
         // write your code.
+        if(isPrime(index+1)) {
+            divEl.classList.add('prime');
+        }
 
         // append the div element to table div
         document.querySelector('.table').appendChild(divEl);
@@ -41,3 +44,9 @@ inputEl.addEventListener('input', function (event) {
     }
 
 })
+
+const isPrime = num => {
+    for(let i = 2; i < num; i++)
+      if(num % i === 0) return false;
+    return num > 1;
+}

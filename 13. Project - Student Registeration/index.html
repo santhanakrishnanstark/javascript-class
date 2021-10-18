@@ -218,7 +218,7 @@
                   <button type="submit" class="btn btn-primary me-5">
                     Register
                   </button>
-                  <button type="button" class="btn btn-outline-secondary">
+                  <button type="reset" class="btn btn-outline-secondary">
                     Clear
                   </button>
                 </div>
@@ -246,6 +246,54 @@
     </main>
 
     <footer></footer>
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#studentPanel"
+    >
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="studentPanel"
+      tabindex="-1"
+      aria-labelledby="studentPanelLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="studentPanelLabel">
+              Student Information
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <table class="table table-borderless student-popup">
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
